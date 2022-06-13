@@ -1,0 +1,42 @@
+[
+    {
+        "Size": "Medium",
+        "Id": "0",
+        "Name": "Your Pizza",
+        "Sauce": "",
+        "Toppings": [],
+        "Price": 350,
+        "image": "https://assets.box8.co.in/default-picture-shape/web/product/844",
+        "CheeseSelection" : ""
+    },
+    {
+        "Size": "Medium",
+        "Id": "1",
+        "Name": "Farm Fresh",
+        "Sauce": "Mariana",
+        "Toppings": [
+            "Tomato",
+            "Onion",
+            "Capsicum",
+            "Jalapeno"
+        ],
+        "Price": 640,
+        "CheeseSelection" : "",
+        "image": "https://assets.box8.co.in/default-picture-shape/web/product/845"
+    },
+    {
+        "Size": "Medium",
+        "Id": "2",
+        "Name": "Tandoori Paneer",
+        "Sauce": "Tandoor",
+        "Toppings": [
+            "Paneer",
+            "Onion",
+            "Capsicum",
+            "Jalapeno"
+        ],
+        "Price": 670,
+        "CheeseSelection" : "",
+        "image":"https://assets.box8.co.in/default-picture-shape/web/product/848"
+    }
+]

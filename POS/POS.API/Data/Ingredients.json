@@ -1,0 +1,58 @@
+{
+  "Size": [
+    {
+      "Price": 250,
+      "Name": "Small"
+    },
+    {
+      "Price": 350,
+      "Name": "Medium"
+    },
+    {
+      "Price": 450,
+      "Name": "Large"
+    }
+  ],
+  "Sauce": [
+    {
+      "Price": 70,
+      "Name": "Mariana"
+    },
+    {
+      "Price": 80,
+      "Name": "Ranch"
+    },
+    {
+      "Price": 75,
+      "Name": "Tandoor"
+    }
+  ],
+  "Topping": [
+    {
+      "Price": 50,
+      "Name": "Onion"
+    },
+    {
+      "Price": 50,
+      "Name": "Tomato"
+    },
+    {
+      "Price": 75,
+      "Name": "Paneer"
+    },
+    {
+      "Price": 60,
+      "Name": "Capsicum"
+    },
+    {
+      "Price": 60,
+      "Name": "Jalapeno"
+    }
+  ],
+  "CheeseSelection": [
+    {
+      "Price": 75,
+      "Name": "Extra Cheese"
+    }
+  ]
+}
