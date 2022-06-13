@@ -1,0 +1,119 @@
+<div *ngIf="customPizza != null">
+
+<br>
+<br>
+<br><br><br>
+<div class="row md-2">
+    <div class="card col-md-4" style="margin: 5px;">
+        <img src="{{customPizza.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">
+            <div style="width: 20px;height: 20px;border-radius: 4px;float: left;margin-right: 10px;">            
+            </div>  
+            <div>
+               <b> {{customPizza.name}} </b>
+            </div>
+            </h3>
+          
+          <h3 class="card-title">Rs {{customPizza.price}}</h3>
+
+        </div>
+      </div>
+</div>
+
+    <div class="row mt-4">
+        <label for="size" class="col-sm-2"> <b>Size</b></label>
+        <div class="col-sm-4">
+             <div class="row">
+                 <table class="table">
+                    <tbody *ngFor="let item of allIngradients?.size;">
+                     <td>
+                        <input type="radio" name = "size" class="form-check-input" [checked]="isSize(item)" (change)="onSizeSelect(item)">            
+                     </td>
+                     <td>
+                        <label class="form-check-label">{{item.name}}</label>
+                     </td>
+                     <td>
+                        <label class="form-check-label">Rs {{item.price}}</label>
+                     </td>
+                    </tbody>
+                 </table>
+             </div>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <label for="size" class="col-sm-2"> <b>Sauce</b></label>
+        <div class="col-sm-4">
+             <div class="row">
+                 <table class="table">
+                    <tbody *ngFor="let item of allIngradients?.sauce;">
+                     <td>
+                        <input type="radio" name = "sauce" class="form-check-input" [checked]="isSauce(item)" (change)="onSauceSelect(item)">            
+                     </td>
+                     <td>
+                        <label class="form-check-label">{{item.name}}</label>
+                     </td>
+                     <td>
+                        <label class="form-check-label">Rs {{item.price}}</label>
+                     </td>
+                    </tbody>
+                 </table>
+             </div>
+        </div>
+    </div>
+<!-- 
+<div class="row mt-4">
+    <label for="size" class="col-sm-2"> <b>Pizza Sauce</b></label>
+    <div class="col-sm-10" *ngFor="let item of allIngradients.sauce;">
+            <label for="{{item.name}}">
+            <input id="{{item.name}}" [value]='item' type="radio" [(ngModel)]="radioSelected"   name="sauceGroup" (change)="sauceChange(item)"">
+            {{item.name}} - {{item.price}}
+    </div>
+</div> -->
+
+<div class="row mt-4">
+    <label for="size" class="col-sm-2"> <b>Cheese</b></label>
+    <div class="col-sm-4">
+         <div class="row">
+             <table class="table">
+                <tbody *ngFor="let item of allIngradients?.cheeseSelection;">
+                 <td>
+                    <input type="checkbox" class="form-check-input" [checked]="isCheese(item)" (change)="onCheeseSelect($event,item)">            
+                 </td>
+                 <td>
+                    <label class="form-check-label">{{item.name}}</label>
+                 </td>
+                 <td>
+                    <label class="form-check-label">Rs {{item.price}}</label>
+                 </td>
+                </tbody>
+             </table>
+         </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <label for="size" class="col-sm-2"> <b>Toppings</b></label>
+    <div class="col-sm-4">
+         <div class="row">
+             <table class="table">
+                <tbody *ngFor="let item of allIngradients?.topping;">
+                 <td>
+                    <input type="checkbox" class="form-check-input" [checked]="isTopping(item)" (change)="onToppingSelect($event,item)">            
+                 </td>
+                 <td>
+                    <label class="form-check-label">{{item.name}}</label>
+                 </td>
+                 <td>
+                    <label class="form-check-label">Rs {{item.price}}</label>
+                 </td>
+                </tbody>
+             </table>
+         </div>
+    </div>
+</div>
+
+<input type="button" class="btn btn-primary" (click)="onAdd()" value="Order">
+
+</div>
